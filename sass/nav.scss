@@ -1,0 +1,46 @@
+.navbar-toggler {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.header {
+  @include md {
+    margin-top: 2rem;
+    border-radius: 20px;
+    padding: 2rem;
+    background-color: $light !important;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+   
+  }
+
+  .nav__link {
+    font-weight: 500;
+    transition: 300ms ease;
+    -webkit-transition: 300ms ease;
+    -moz-transition: 300ms ease;
+    -ms-transition: 300ms ease;
+    -o-transition: 300ms ease;
+    &:hover {
+      background-color: $primary;
+      color: white !important;
+      padding: 1.2rem;
+      border-radius: 12px;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      -ms-border-radius: 12px;
+      -o-border-radius: 12px;
+    }
+  }
+  .dropdown-menu {
+    background-color: transparent;
+    text-align: center;
+  }
+
+  .dropdown_link {
+    padding: 0.5em !important;
+  }
+}

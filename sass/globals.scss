@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+@import './sass/variables.scss'; 
+@import './sass/mixins.scss'; 
+@import './sass/nav.scss'; 
+html,
+body {
+  overflow-x: hidden;
+  transition: 0.2s ease all    ;
+  -webkit-transition: 0.2s ease all    ;
+  -moz-transition: 0.2s ease all    ;
+  -ms-transition: 0.2s ease all    ;
+  -o-transition: 0.2s ease all    ;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color : white ;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none !important; 
+  outline : none !important;
+  border: none !important;
+}
+
+
+
+html {
+  font-size: 62.5%; 
+
+  @include md {
+    font-size: 58%;
+
+  }
+  @include sm {
+    font-size: 55%;
+
+  }
+}
+
+
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width : 85% !important ;
+  margin-inline: auto;
+}
+
+.section-padding {
+  padding-block: 10rem;
+
+
+}
+
+
+@for $i from 1 through 10 {
+  .text-#{$i} {
+    font-size: #{$i}rem;
+    line-height: 120%;
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+
+
+
+  // menu bar
+  .bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: calc(4px / 2);
+    background: $dark;
+    color: inherit;
+    opacity: 1;
+    transition: none 0.25s cubic-bezier(.5,-0.35,.35,1.5) 0s;
+    -webkit-transition: none 0.25s cubic-bezier(.5,-0.35,.35,1.5) 0s;
+    -moz-transition: none 0.25s cubic-bezier(.5,-0.35,.35,1.5) 0s;
+    -ms-transition: none 0.25s cubic-bezier(.5,-0.35,.35,1.5) 0s;
+    -o-transition: none 0.25s cubic-bezier(.5,-0.35,.35,1.5) 0s;
+}
+  
+  /***** Collapse Animation *****/
+  
+  .bar--top {
+    bottom: calc(50% + 11px + 4px/ 2);
+    transition-property: bottom,margin,transform;
+    transition-delay: calc(0s + 0.35s),0s,0s;
+  }
+  
+  .bar--middle {
+    top: calc(50% - 4px/ 2);
+    transition-property: top,opacity;
+    transition-duration: 0.35s,0s;
+    transition-delay: calc(0s + 0.35s * 1.3),calc(0s + 0.35s * 1.3);
+  }
+  
+  .bar--bottom {
+    top: calc(50% + 11px + 4px/ 2);
+    transition-property: top,transform;
+    transition-delay: 0s;
+  }
+  
+  #checkbox:checked + .toggle .bar--top {
+    bottom: calc(50% - 11px - 4px);
+    margin-bottom: calc(11px + 4px/ 2);
+    transform: rotate(45deg);
+    transition-delay: calc(0s + 0.35s * .3),calc(0s + 0.35s * 1.3),calc(0s + 0.35s * 1.3);
+  }
+  
+  #checkbox:checked + .toggle .bar--middle {
+    top: calc(50% + 11px);
+    opacity: 0;
+    transition-duration: 0.35s,0s;
+    transition-delay: 0s,calc(0s + 0.35s);
+  }
+  
+  #checkbox:checked + .toggle .bar--bottom {
+    top: calc(50% - 4px/ 2);
+    transform: rotate(-45deg);
+    transition-delay: calc(0s + 0.35s * 1.3),calc(0s + 0.35s * 1.3);
+  }
+

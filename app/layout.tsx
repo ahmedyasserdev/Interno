@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "@/sass/globals.scss";
 import Header from "@/components/shared/Header";
+import Template from "./template";
 
 
 export const metadata: Metadata = {
@@ -20,9 +21,11 @@ export default function RootLayout({
             
   <div className=" root" >
     <Header /> 
+            <Template>
           <main className="flex-grow-1 " > 
-          {children}
+            {children}
           </main>
+            </Template>
   </div>
       
           </body>

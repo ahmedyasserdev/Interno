@@ -1,5 +1,5 @@
 $breakpoints: (
-    "sm": 676px,
+    "sm": 767px,
     "md": 991px,
     "lg": 992px,
     "xl": 1120px
@@ -31,3 +31,11 @@ $breakpoints: (
         @content;
     }
 };
+
+
+@mixin hero-background($image-url, $height) {
+    background: url('#{$image-url}') center/cover no-repeat;
+    height: $height;
+    width: 100%;
+  }
+  

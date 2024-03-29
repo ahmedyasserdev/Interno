@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
-@import './sass/variables.scss'; 
-@import './sass/mixins.scss'; 
-@import './sass/nav.scss'; 
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "./sass/variables.scss";
+@import "./sass/mixins.scss";
+@import "./sass/nav.scss";
 html,
 body {
   overflow-x: hidden;
-  transition: 0.2s ease all    ;
-  -webkit-transition: 0.2s ease all    ;
-  -moz-transition: 0.2s ease all    ;
-  -ms-transition: 0.2s ease all    ;
-  -o-transition: 0.2s ease all    ;
-  font-family: 'Be Vietnam Pro', sans-serif;
-  background-color : white ;
+  transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  font-family: "Jost", sans-serif;
+
+  background-color: white;
 }
 
 * {
@@ -19,26 +20,26 @@ body {
   margin: 0;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none !important; 
-  outline : none !important;
+  text-decoration: none !important;
+  outline: none !important;
   border: none !important;
 }
 
-
-
 html {
-  font-size: 62.5%; 
+  font-size: 62.5%;
 
   @include md {
     font-size: 58%;
-
   }
   @include sm {
-    font-size: 55%;
-
+    font-size: 53%;
   }
 }
 
+p {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+}
 
 .root {
   display: flex;
@@ -53,21 +54,46 @@ img {
 }
 
 .container {
-  width : 85% !important ;
+  width: 85% !important ;
   margin-inline: auto;
 }
 
 .section-padding {
-  padding-block: 10rem;
-
-
+  padding-block: 12rem;
 }
 
+.button {
+  padding: 12px 20px !important;
+  width: max-content !important ;
+
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  font-size: 18px !important;
+  line-height: 125% !important;
+  display: flex !important ;
+  align-items: center !important;
+  text-align: center !important;
+  letter-spacing: 0.02em !important;
+}
 
 @for $i from 1 through 10 {
   .text-#{$i} {
     font-size: #{$i}rem;
     line-height: 120%;
+  }
+}
+
+@for $i from 1 through 1000 {
+  .width-#{$i} {
+    width: #{$i}px !important;
+  }
+}
+@for $i from 1 through 100 {
+  .gap_#{$i} {
+    gap: #{$i}rem !important;
   }
 }
 
@@ -95,65 +121,63 @@ img {
   align-items: center;
 }
 
+/* Components */
 
-
-
-
-  // menu bar
-  .bar {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 4px;
-    border-radius: calc(4px / 2);
-    background: $dark;
-    color: inherit;
-    opacity: 1;
-    transition: none 0.25s cubic-bezier(.5,-0.35,.35,1.5) 0s;
-    -webkit-transition: none 0.25s cubic-bezier(.5,-0.35,.35,1.5) 0s;
-    -moz-transition: none 0.25s cubic-bezier(.5,-0.35,.35,1.5) 0s;
-    -ms-transition: none 0.25s cubic-bezier(.5,-0.35,.35,1.5) 0s;
-    -o-transition: none 0.25s cubic-bezier(.5,-0.35,.35,1.5) 0s;
+.hero {
+  @include hero-background("/images/home-hero.svg", 70rem);
 }
-  
-  /***** Collapse Animation *****/
-  
-  .bar--top {
-    bottom: calc(50% + 11px + 4px/ 2);
-    transition-property: bottom,margin,transform;
-    transition-delay: calc(0s + 0.35s),0s,0s;
+
+.free_estimate {
+  @include sm {
+    position: relative;
+    @include hero-background("/images/kitchen.svg", 70rem);
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background-color: #fff !important;
+      opacity: 0.7;
+    }
   }
-  
-  .bar--middle {
-    top: calc(50% - 4px/ 2);
-    transition-property: top,opacity;
-    transition-duration: 0.35s,0s;
-    transition-delay: calc(0s + 0.35s * 1.3),calc(0s + 0.35s * 1.3);
-  }
-  
-  .bar--bottom {
-    top: calc(50% + 11px + 4px/ 2);
-    transition-property: top,transform;
-    transition-delay: 0s;
-  }
-  
-  #checkbox:checked + .toggle .bar--top {
-    bottom: calc(50% - 11px - 4px);
-    margin-bottom: calc(11px + 4px/ 2);
-    transform: rotate(45deg);
-    transition-delay: calc(0s + 0.35s * .3),calc(0s + 0.35s * 1.3),calc(0s + 0.35s * 1.3);
-  }
-  
-  #checkbox:checked + .toggle .bar--middle {
-    top: calc(50% + 11px);
-    opacity: 0;
-    transition-duration: 0.35s,0s;
-    transition-delay: 0s,calc(0s + 0.35s);
-  }
-  
-  #checkbox:checked + .toggle .bar--bottom {
-    top: calc(50% - 4px/ 2);
-    transform: rotate(-45deg);
-    transition-delay: calc(0s + 0.35s * 1.3),calc(0s + 0.35s * 1.3);
+}
+
+.info:not(:last-child) {
+  border-right: 1px solid $primary !important ;
+}
+
+.article__card {
+  position: relative;
+  border-radius: 62px;
+  transition: 200ms ease;
+  -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -ms-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  &:hover {
+    background-color: $light;
   }
 
+  .article__card-tag {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-bottom-left-radius: 0;
+    h6 {
+      color: $dark;
+      font: {
+        size: 1.8rem;
+        weight: bold;
+      }
+    }
+  }
+}

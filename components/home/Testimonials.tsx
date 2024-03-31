@@ -16,7 +16,7 @@ const TestimonialCard = ({ testimonial , index } :{ testimonial :  Testimonial ,
   };
 
   return (
-    <Col md={6} lg={4} className="p-5 bg-white rounded-md">
+    <Col  lg={4} sm={6} className="p-5 bg-white rounded-md">
       <motion.div
         ref={ref}
         initial="hidden"
@@ -51,14 +51,14 @@ const TestimonialCard = ({ testimonial , index } :{ testimonial :  Testimonial ,
 const Testimonials = () => {
   return (
     <section className="section-padding">
-      <Container className="bg-light rounded-lg p-5">
+      <Container className="bg-light rounded-lg p-5" >
         <div className="flex-center text-center">
           <h1 className="text-primary text-4 text-dark fw-bold py-5">
             What the People Thinks <br /> About Us
           </h1>
         </div>
 
-        <Row className={`gap_2 mt-4 ${testimonials.length > 3 ? "flex-wrap" : "flex-lg-nowrap"}`}>
+        <Row className={`  gap-4 gap-md-2 gap-lg-4  mt-4 ${testimonials.length > 3 ? "flex-wrap" : "flex-lg-nowrap"}`}>
           {testimonials.map((testimonial  : Testimonial , index : number ) =>   (
             <TestimonialCard key={testimonial.image} index = {index} testimonial={testimonial} />
           ))}

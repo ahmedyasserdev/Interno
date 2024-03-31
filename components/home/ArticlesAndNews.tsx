@@ -16,6 +16,17 @@ const ArticlesAndNews = () => {
   return (
     <section className="section-padding">
       <Container>
+
+      <div className="flex-center flex-column gap_1 text-center mb-4">
+          <h1 className=" text-4 text-dark fw-bold  ">Article & News</h1>
+          <p
+            className="text-dark fw-normal  "
+            style={{ width: "45rem" }}
+          >
+            It is a long established fact that a reader will be distracted by
+            the of readable content of page lookings at its layouts points.
+          </p>
+        </div>
         <Row>
           {articlesAndNews.map((item, index) => (
             <Col key={index} lg={4} md={6}>

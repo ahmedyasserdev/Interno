@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "@/sass/globals.scss";
 import Header from "@/components/shared/Header";
 import Template from "./template";
+import Footer from "@/components/shared/Footer";
 
 
 export const metadata: Metadata = {
@@ -26,6 +27,7 @@ export default function RootLayout({
             {children}
           </main>
             </Template>
+            <Footer />
   </div>
       
           </body>

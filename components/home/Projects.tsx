@@ -63,8 +63,8 @@ const Projects = () => {
         <div className="flex-center flex-column gap_1 text-center">
           <h1 className=" text-4 text-dark fw-bold  ">Follow Our Projects</h1>
           <p
-            className="text-dark fw-normal "
-            style={{ width: "60rem", maxWidth: "70rem" }}
+            className="text-dark fw-normal px-4 px-md-0 "
+            style={{ width: "45rem" }}
           >
             It is a long established fact that a reader will be distracted by
             the of readable content of page lookings at its layouts points.

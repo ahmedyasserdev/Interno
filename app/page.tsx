@@ -6,7 +6,7 @@ import Brands from "@/components/home/Brands";
 import Projects from "@/components/home/Projects";
 import Info from "@/components/home/Info";
 import ArticlesAndNews from "@/components/home/ArticlesAndNews";
-
+import CTA from "@/components/shared/CTA"
 export default function Home() {
   return (
     <>
@@ -18,6 +18,7 @@ export default function Home() {
     <Projects />
     <Info />
     <ArticlesAndNews />
+    <CTA />
     </>
   );
 }

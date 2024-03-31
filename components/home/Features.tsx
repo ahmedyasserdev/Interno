@@ -15,7 +15,7 @@ const FeatureCard = ({ feature, index } : {feature : feature ; index : number}) 
   };
 
   return (
-    <Col xs={"auto"} lg={4} className="justify-content-center text-center">
+    <Col xs={"auto"} lg={4} className="justify-content-center text-center ">
       <motion.div
         ref={ref}
         initial="hidden"

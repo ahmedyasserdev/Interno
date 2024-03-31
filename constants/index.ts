@@ -183,3 +183,58 @@ export const articlesAndNews = [
 
 
 
+export const socials = [
+  {
+    icon : "/icons/facebook.svg",
+    alt : "facebook"
+  },
+  {
+    icon : "/icons/twitter.svg",
+    alt : "twitter"
+  },
+  {
+    icon : "/icons/linkedin.svg",
+    alt : "linkedin"
+  },
+  {
+    icon : "/icons/instagram.svg",
+    alt : "instagram"
+  },
+]
+
+
+export const footerPages = [
+  {
+    title : "pages",
+    pages : [
+      {
+        label : "About Us",
+        route : "/about"
+      },
+    {
+      label: "Our Projects",
+      route: "/projects",
+    },
+    {
+      label: "Our Team",
+      route: "/team",
+    },
+    {
+      label: "contact us",
+      route: "/contact",
+    },
+    {
+      label: "services",
+      route: "/services",
+    },
+    ]
+  }
+]
+
+export const footerServices = [
+  'Kitchen',
+  'Living Area ',
+  'Bathroom',
+  'Dinning Hall',
+  'Bedroom',
+]

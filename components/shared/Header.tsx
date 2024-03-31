@@ -55,7 +55,7 @@ const Header = () => {
                         } dropdown_link`}
                       >
                         <Link
-                          className={` text-dark text-2 nav__link`}
+                          className={` text-dark text-2 `}
                           href={item.route}
                         >
                           {item.label}

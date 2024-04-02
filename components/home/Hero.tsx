@@ -7,9 +7,9 @@ const Hero = () => {
     <section className='hero section-padding' >
         <Container>
          
-             <Stack className="  gap_1 text-center text-md-start mt-md-4 ">
+             <div className="   text-center text-md-start mt-md-4 ">
                  <h1 className="text-5 fw-bold text-dark text-capitalize ">Let your home  <br /> be unique</h1>
-                 <p className="text-dark text-2 fw-normal   width-400   lh-base">
+                 <p className="text-dark text-2 fw-normal   width-400   lh-base my-4">
                  There are many variations of the passages of
 lorem Ipsum fromavailable, majority.
                  </p>
@@ -18,7 +18,7 @@ lorem Ipsum fromavailable, majority.
                     <Image  src = "/icons/right-arrow.svg" alt = "arrow" width = {20} height = {20} className = "    object-fit-contain"  />
                         
                  </Button>
-             </Stack>
+             </div>
         </Container>
     </section>
   )

@@ -34,15 +34,16 @@ const GetFreeEstimate = () => {
                 </div>
 
 
-                <Button  variant = "dark"  className = "    gap-4 button w-auto  ">
-                   Get  Free Estimate
-                    <Image  src = "/icons/right-arrow.svg" alt = "arrow" width = {20} height = {20} className = "    object-fit-contain"  />
-                        
-                 </Button>
+                
 
 
 
             </Stack>
+            <Button  variant = "dark"  className = "  mt-5  gap-4 button w-auto  ">
+                   Get  Free Estimate
+                    <Image  src = "/icons/right-arrow.svg" alt = "arrow" width = {20} height = {20} className = "    object-fit-contain"  />
+                        
+                 </Button>
           </Col>
 
 

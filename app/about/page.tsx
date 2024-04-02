@@ -1,13 +1,21 @@
+import AboutUs from '@/components/about/AboutUs'
+import Quotes from '@/components/about/Quotes'
+import Result from '@/components/about/Result'
+import WhatWeDo from '@/components/about/WhatWeDo'
+import ContactForm from '@/components/shared/ContactForm'
+import PageHeader from '@/components/shared/PageHeader'
 import React from 'react'
 
 const page = () => {
   return (
-    <div  >
-      <h1 className="text-6">Lorem, ipsum.</h1>
-
-        <p className="text-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe tempora rem quam, expedita nemo reiciendis beatae corporis aut vitae necessitatibus, nostrum eveniet praesentium, quia sunt repudiandae in nulla aperiam vero laboriosam ad minima quasi? Eveniet illum eos repudiandae quas voluptatum, facilis quia, odio odit omnis non est obcaecati inventore dolore?</p>
-
-    </div>
+    <>
+    <PageHeader image = "/images/about-banner.png" title = "about us"  subTitle='Home / About us' />
+    <Quotes />
+    <WhatWeDo />
+   <Result />
+   <AboutUs />
+   <ContactForm/>
+    </>
   )
 }
 

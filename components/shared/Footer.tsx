@@ -74,7 +74,7 @@ const Footer = () => {
                         </li>
                          {
                            footerServices.map((item , index ) => (
-                              <li  key = {index}  className= "text-2 text-capitalize" >
+                              <li  key = {index}  className= "text-2 text-capitalize text-dark" >
                                {item}
                               </li>
                         
@@ -89,15 +89,15 @@ const Footer = () => {
                         <Col  className = " mt-5 mt-lg-0" md = {6} lg = {3}>
                           <div className = "d-flex align-items-start text-start gap_2 flex-column " >
                         <h5 className="text-dark  fw-bold " style = {{fontSize : "2.4rem"}} >Contact </h5>
-                          <p>
+                          <p className="text-dark" >
                           55 East Birchwood Ave. Brooklyn, New York 11201 
                           </p>
 
-                          <p>
+                          <p className="text-dark" >
                           contact@interno.com
                           </p>
                          
-                         <p>
+                         <p className="text-dark" >
                          (123) 456 - 7890
                          </p>
                          

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "./sass/variables.scss";
 @import "./sass/mixins.scss";
 @import "./sass/nav.scss";
@@ -10,9 +10,18 @@ body {
   -moz-transition: 0.2s ease all;
   -ms-transition: 0.2s ease all;
   -o-transition: 0.2s ease all;
-  font-family: "Jost", sans-serif;
+  font-family: "DM Serif Display", system-ui;
 
   background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display";
 }
 
 * {
@@ -39,6 +48,7 @@ html {
 p {
   font-size: 16px !important;
   line-height: 1.8 !important;
+  font-family: "Jost", sans-serif;
 }
 
 .root {
@@ -64,7 +74,6 @@ img {
 
 .button {
   padding: 12px 20px !important;
-  width: max-content !important ;
 
   border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -182,4 +191,65 @@ img {
   }
 }
 
+.quotes {
+  max-width: 87.55rem;
 
+  background-image: url("/images/pattern.svg");
+  @include md {
+    padding: 3.5rem 2.5rem;
+  }
+  @include lg {
+    padding: 7rem 2rem;
+  }
+}
+
+.person_wrapper {
+  position: relative;
+  overflow: hidden;
+
+  .person_details {
+    position: absolute;
+    border-radius: 30px;
+    inset: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding-block: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(25px);
+    transition: 300ms ease-in-out;
+    -webkit-transition: 300ms ease-in-out;
+    -moz-transition: 300ms ease-in-out;
+    -ms-transition: 300ms ease-in-out;
+    -o-transition: 300ms ease-in-out;
+    -webkit-transform: translateY(25px);
+    -moz-transform: translateY(25px);
+    -ms-transform: translateY(25px);
+    -o-transform: translateY(25px);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+  }
+
+  &:hover .person_details {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+}
+
+.input-field {
+  padding: 1rem 1.5rem;
+  font : {
+    size: 2rem;
+    weight: 500;
+  }
+  border-bottom: 1px solid $dark !important;
+}

@@ -300,3 +300,38 @@ export const aboutUsTeam = [
     ],
   },
 ];
+
+
+
+export const services = [
+  {
+    title : "Project Plan",
+    desc : "There are many variations of the passages of lorem Ipsum from  available, majority.",
+    link : "read more "
+  },
+  {
+    title : "interior work",
+    desc : "There are many variations of the passages of lorem Ipsum from  available, majority.",
+    link : "read more "
+  },
+  {
+    title : "retail design",
+    desc : "There are many variations of the passages of lorem Ipsum from  available, majority.",
+    link : "read more "
+  },
+  {
+    title : '2/3d art work',
+    desc : "There are many variations of the passages of lorem Ipsum from  available, majority.",
+    link : "read more "
+  },
+  {
+    title : "interior work",
+    desc : "There are many variations of the passages of lorem Ipsum from  available, majority.",
+    link : "read more "
+  },
+  {
+    title : "decoration work",
+    desc : "There are many variations of the passages of lorem Ipsum from  available, majority.",
+    link : "read more "
+  },
+]

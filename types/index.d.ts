@@ -50,3 +50,21 @@ type PersonDetailsProps = {
   };
   index : number;
 };
+
+
+type HowWeWorkInfoProps = {
+  title : string  | undefined ;
+  count : string  | undefined ;
+  desc : string  | undefined ;
+  icon : string  | undefined ;
+
+}
+
+type HowWeWorkItemProps  = {
+  title?: string ;
+  count?: string ;
+  desc?: string ;
+  icon?: string ;
+  imageSrc?: string ;
+  delay?: number ;
+}

@@ -154,7 +154,9 @@ img {
 }
 
 .info:not(:last-child) {
-  border-right: 1px solid $primary !important ;
+  @include lg {
+    border-right: 1px solid $primary !important ;
+  }
 }
 
 .article__card {
@@ -253,3 +255,21 @@ img {
   }
   border-bottom: 1px solid $dark !important;
 }
+
+.service {
+  cursor: pointer;
+  transition: 200ms background linear;
+  -webkit-transition: 200ms background linear;
+  -moz-transition: 200ms background linear;
+  -ms-transition: 200ms background linear;
+  -o-transition: 200ms background linear;
+  &:hover {
+    background-color: $light !important ;
+  }
+}
+
+.cta_container {
+  padding-block : 6rem !important; 
+}
+
+// TODO: Convert the home images from svg to png

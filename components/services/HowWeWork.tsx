@@ -21,7 +21,7 @@ const HowWeWork = () => {
                     </p>
                 </div>
 
-                <div className="p-5 d-flex flex-column  gap-5">
+                <div className="p-5 d-flex flex-column  gap-4">
                     <Row>
                         <HowWeWorkItem
                             imageSrc="/images/how-we-work-1.png"

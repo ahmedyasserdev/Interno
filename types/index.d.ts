@@ -68,3 +68,17 @@ type HowWeWorkItemProps  = {
   imageSrc?: string ;
   delay?: number ;
 }
+
+
+type PricingPlanProps = {
+  plan : {
+    isPopular? : boolean ;
+  title : string ;
+  price : string ;
+  features : string[];
+    action : string ;
+  };
+  index : number; 
+  
+
+}

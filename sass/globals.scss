@@ -81,7 +81,6 @@ img {
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
   font-size: 18px !important;
-  line-height: 125% !important;
   display: flex !important ;
   align-items: center !important;
   text-align: center !important;
@@ -272,4 +271,44 @@ img {
   padding-block : 6rem !important; 
 }
 
+
+.most_popular-wrapper {
+  
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin-block : 2.5rem ;
+
+  .most_popular {
+    position:  absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background: $dark ;
+    padding: 13px 38px  0px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    z-index : 1 ;
+    top : -20px ;
+  
+    p {
+      text-wrap  : nowrap ;
+    }
+  }
+  
+
+}
+
+
+
+
+
 // TODO: Convert the home images from svg to png
+
+

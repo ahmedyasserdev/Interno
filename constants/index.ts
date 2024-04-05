@@ -301,37 +301,75 @@ export const aboutUsTeam = [
   },
 ];
 
-
-
 export const services = [
   {
-    title : "Project Plan",
-    desc : "There are many variations of the passages of lorem Ipsum from  available, majority.",
-    link : "read more "
+    title: "Project Plan",
+    desc: "There are many variations of the passages of lorem Ipsum from  available, majority.",
+    link: "read more ",
   },
   {
-    title : "interior work",
-    desc : "There are many variations of the passages of lorem Ipsum from  available, majority.",
-    link : "read more "
+    title: "interior work",
+    desc: "There are many variations of the passages of lorem Ipsum from  available, majority.",
+    link: "read more ",
   },
   {
-    title : "retail design",
-    desc : "There are many variations of the passages of lorem Ipsum from  available, majority.",
-    link : "read more "
+    title: "retail design",
+    desc: "There are many variations of the passages of lorem Ipsum from  available, majority.",
+    link: "read more ",
   },
   {
-    title : '2/3d art work',
-    desc : "There are many variations of the passages of lorem Ipsum from  available, majority.",
-    link : "read more "
+    title: "2/3d art work",
+    desc: "There are many variations of the passages of lorem Ipsum from  available, majority.",
+    link: "read more ",
   },
   {
-    title : "interior work",
-    desc : "There are many variations of the passages of lorem Ipsum from  available, majority.",
-    link : "read more "
+    title: "interior work",
+    desc: "There are many variations of the passages of lorem Ipsum from  available, majority.",
+    link: "read more ",
   },
   {
-    title : "decoration work",
-    desc : "There are many variations of the passages of lorem Ipsum from  available, majority.",
-    link : "read more "
+    title: "decoration work",
+    desc: "There are many variations of the passages of lorem Ipsum from  available, majority.",
+    link: "read more ",
   },
-]
+];
+
+export const pricingPlans = [
+  {
+    title: "Design Advice",
+    price: "29",
+    features: [
+      "general living space advice",
+      "Rennovation advices",
+      "Interior design advice",
+      "Furniture reorganization",
+      "Up to 5 hours meetings",
+    ],
+    action: "get Started",
+  },
+  {
+    title: "complete interior",
+    price: "39",
+    features: [
+      "Complete home redesign",
+      "Interior and exterior works",
+      "Modular interior planning",
+      "Kitchen design",
+      "Garages organization",
+    ],
+    action: "get Started",
+    isPopular: true,
+  },
+  {
+    title: "furniture design",
+    price: "59",
+    features: [
+      "Furniture for living room",
+      "Furniture refurbishment",
+      "Sofas and amchairs",
+      "Tables and chairs",
+      "Kitchens",
+    ],
+    action: "get Started",
+  },
+];

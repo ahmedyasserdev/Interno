@@ -82,3 +82,7 @@ type PricingPlanProps = {
   
 
 }
+
+type ProjectTypesProps = {
+  types : string[] ; selectedType : string   ; handleUpdateSearchParams : (type) => void
+}

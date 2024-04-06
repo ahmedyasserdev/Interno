@@ -113,23 +113,30 @@ export const brands = [
 export const projects = [
   {
     title: "Modern Kitchen",
-    image: "/images/project-1.svg",
+    image: "/images/project-1.png",
     desc: "Decor / Artchitecture",
+    type : "bedroom",
   },
   {
     title: "Modern Kitchen",
-    image: "/images/project-2.svg",
+    image: "/images/project-2.png",
     desc: "Decor / Artchitecture",
+    type : "bathroom",
+
   },
   {
     title: "Modern Kitchen",
-    image: "/images/project-3.svg",
+    image: "/images/project-3.png",
     desc: "Decor / Artchitecture",
+    type : "kitchen",
+
   },
   {
     title: "Modern Kitchen",
-    image: "/images/project-4.svg",
+    image: "/images/project-4.png",
     desc: "Decor / Artchitecture",
+    type : "livigns area ",
+
   },
 ];
 
@@ -373,3 +380,5 @@ export const pricingPlans = [
     action: "get Started",
   },
 ];
+
+

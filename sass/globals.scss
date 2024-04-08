@@ -306,7 +306,12 @@ img {
 }
 
 
-
+.blog_hero{
+  width : 100%  ;
+  @include mmd {
+    width : 50%;
+  }  
+}
 
 
 // TODO: Convert the home images from svg to png

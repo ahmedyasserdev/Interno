@@ -6,7 +6,7 @@ import { Card, Col, Container, Row, Stack } from "react-bootstrap";
 import Image from "next/image";
 import {motion} from 'framer-motion'
 
-const ArticlesAndNews = () => {
+const ArticlesAndNews = ({data , isBlog = false }   : {data : {}[] , isBlog? : boolean  } ) => {
   const [selectedCard, setSelectedCard] = useState<number>(1);
 
   const handleCardClick = (index: number) => {
@@ -17,20 +17,25 @@ const ArticlesAndNews = () => {
     <section className="section-padding">
       <Container>
 
-      <div className="flex-center flex-column gap_1 text-center mb-4">
+      <div className={` ${isBlog  ? "text-md-start " : "flex-center flex-column  gap_1" } text-center  mb-4`}>
           <h1 className=" text-4 text-dark fw-bold  ">Article & News</h1>
-          <p
-            className="text-dark fw-normal  "
-            style={{ width: "45rem" }}
-          >
-            It is a long established fact that a reader will be distracted by
-            the of readable content of page lookings at its layouts points.
-          </p>
+          {
+            !isBlog && (
+              <p
+              className="text-dark fw-normal  "
+              style={{ width: "45rem" }}
+            >
+              It is a long established fact that a reader will be distracted by
+              the of readable content of page lookings at its layouts points.
+            </p>
+            ) 
+          }
         </div>
         <Row>
-          {articlesAndNews.map((item, index) => (
+          {data.map((item, index) => (
             <Col key={index} lg={4} md={6}>
               <AnimatedArticleCard
+              //@ts-ignore
                 item={item}
                 index={index}
                 selected={selectedCard === index}
@@ -66,7 +71,7 @@ const AnimatedArticleCard = ({ item, index, selected, handleCardClick } : Animat
         onClick={() => handleCardClick(index)}
        
       >
-        <Card.Img variant="top" src={item.image} loading="lazy" />
+        <Card.Img variant="top" src={item.image} loading="lazy" className="object-fit-contain" />
         <Card.Body>
           <Stack gap={2}>
             <Card.Title className="flex-grow-1 text-dark fw-bold text-2">{item.title}</Card.Title>

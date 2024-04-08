@@ -18,6 +18,12 @@ $breakpoints: (
         @content;
     }
 };
+// starts from the medium screens
+@mixin mmd {
+    @media (min-width: map-get($breakpoints, "md")) {
+        @content;
+    }
+};
 
 
 @mixin lg {

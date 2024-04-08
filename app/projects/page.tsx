@@ -34,6 +34,7 @@ const Page = ({ searchParams }: { searchParams: { type: string } }) => {
             types={types}
             selectedType={searchParams.type}
             handleUpdateSearchParams={handleUpdateSearchParams}
+            searchParams ={searchParams}
           />
 
           {/* Project Cards */}
@@ -54,7 +55,7 @@ export default Page;
 
 
 
-const ProjectTypes = ({ types, selectedType, handleUpdateSearchParams } :ProjectTypesProps  ) => {
+const ProjectTypes = ({ types, selectedType, handleUpdateSearchParams  , searchParams } :ProjectTypesProps  ) => {
   return (
     <div className="flex-center gap-4 rounded-5 border border-primary flex-wrap mx-auto px-lg-5" style={{ width: "fit-content" }}>
       {types.map((type) => (
@@ -62,7 +63,7 @@ const ProjectTypes = ({ types, selectedType, handleUpdateSearchParams } :Project
           <h5
             style={{ cursor: "pointer" }}
             className={`${
-              type === selectedType
+              type === selectedType || (searchParams.type === (null || undefined ) && type === "all"  )
                 ? 'bg-primary rounded-4 text-white'
                 : 'text-dark'
             } lh-1 fw-bold px-5 py-4 pe-auto text-2 text-capitalize h-100`}

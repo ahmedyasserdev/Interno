@@ -16,6 +16,7 @@ type Project = {
   title: string;
   desc: string;
   image: string;
+  type?: string;
 };
 
 type ProjectCardProps = {
@@ -40,49 +41,46 @@ type AnimatedArticleCardProps = {
 type PageHeaderProps = { subTitle: string; title: string; image: string };
 
 type PersonDetailsProps = {
-  person : {
-
+  person: {
     name: string;
     socials: string[];
     email: string;
     number: string;
     job: string;
   };
-  index : number;
+  index: number;
 };
 
-
 type HowWeWorkInfoProps = {
-  title : string  | undefined ;
-  count : string  | undefined ;
-  desc : string  | undefined ;
-  icon : string  | undefined ;
+  title: string | undefined;
+  count: string | undefined;
+  desc: string | undefined;
+  icon: string | undefined;
+};
 
-}
-
-type HowWeWorkItemProps  = {
-  title?: string ;
-  count?: string ;
-  desc?: string ;
-  icon?: string ;
-  imageSrc?: string ;
-  delay?: number ;
-}
-
+type HowWeWorkItemProps = {
+  title?: string;
+  count?: string;
+  desc?: string;
+  icon?: string;
+  imageSrc?: string;
+  delay?: number;
+};
 
 type PricingPlanProps = {
-  plan : {
-    isPopular? : boolean ;
-  title : string ;
-  price : string ;
-  features : string[];
-    action : string ;
+  plan: {
+    isPopular?: boolean;
+    title: string;
+    price: string;
+    features: string[];
+    action: string;
   };
-  index : number; 
-  
-
-}
+  index: number;
+};
 
 type ProjectTypesProps = {
-  types : string[] ; selectedType : string   ; handleUpdateSearchParams : (type) => void
-}
+  types: string[];
+  selectedType: string;
+  handleUpdateSearchParams: (type) => void;
+  searchParams: { type: string };
+};

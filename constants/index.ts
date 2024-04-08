@@ -162,20 +162,40 @@ export const info = [
 export const articlesAndNews = [
   {
     tag: "Kitchan Design",
-    image: "/images/articles-1.svg",
+    image: "/images/articles-1.png",
     title: "Let's Get Solution For Building Construction Work",
     date: "26 December,2022 ",
   },
   {
     tag: "Living Design",
-    image: "/images/articles-2.svg",
+    image: "/images/articles-2.png",
 
     title: "Low Cost Latest Invented Interior Designing Ideas.",
     date: "22 December,2022 ",
   },
   {
     tag: "Interior Design",
-    image: "/images/articles-3.svg",
+    image: "/images/articles-3.png",
+
+    title: "Best For Any Office & Business Interior Solution",
+    date: "25 December,2022 ",
+  },
+  {
+    tag: "Kitchan Design",
+    image: "/images/articles-4.png",
+    title: "Let's Get Solution For Building Construction Work",
+    date: "26 December,2022 ",
+  },
+  {
+    tag: "Living Design",
+    image: "/images/articles-5.png",
+
+    title: "Low Cost Latest Invented Interior Designing Ideas.",
+    date: "22 December,2022 ",
+  },
+  {
+    tag: "Interior Design",
+    image: "/images/articles-6.png",
 
     title: "Best For Any Office & Business Interior Solution",
     date: "25 December,2022 ",

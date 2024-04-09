@@ -13,6 +13,7 @@ const Header = () => {
   const pathname = usePathname();
   return (
     <AnimatedNavbar
+    //@ts-ignore
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
@@ -44,7 +45,7 @@ const Header = () => {
                     key={index}
                     title={link.label}
                     id={`nav-dropdown-${index}`}
-                    className="text-2 links__dropdown"
+                    className="text-2 links__dropdown z-10"
                   >
                     {link.dropdownItems.map((item, subIndex) => (
                       <NavDropdown.Item

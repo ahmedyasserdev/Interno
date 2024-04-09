@@ -26,22 +26,3 @@ const PageHeader = ({title , image , subTitle} : PageHeaderProps) => {
 export default PageHeader
 
 
-
-// /* About Us */
-
-// /* Auto layout */
-// display: flex;
-// flex-direction: column;
-// justify-content: center;
-// align-items: center;
-// 
-// gap: 10px;
-
-// position: absolute;
-// width: 503px;
-// height: 178px;
-// left: 708px;
-// top: 317px;
-
-// background: #FFFFFF;
-// 

@@ -39,18 +39,30 @@ type AnimatedArticleCardProps = {
 };
 
 type PageHeaderProps = { subTitle: string; title: string; image: string };
+type Person = {
+  person : {
+    image: string;
+  details: {
+    name: string;
+    job: string;
+    socials: string[];
+    number: string;
+    email: string;
+  }[];
+  };
+  index : number ;
+};
 
 type PersonDetailsProps = {
   person: {
     name: string;
-    socials: string[];
-    email: string;
-    number: string;
     job: string;
+    socials: string[];
+    number: string;
+    email: string;
   };
   index: number;
 };
-
 type HowWeWorkInfoProps = {
   title: string | undefined;
   count: string | undefined;

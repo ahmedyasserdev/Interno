@@ -257,7 +257,7 @@ export const footerServices = [
   "Bedroom",
 ];
 
-export const aboutUsTeam = [
+export const team = [
   {
     image: "/images/person-1.svg",
     details: [
@@ -311,6 +311,74 @@ export const aboutUsTeam = [
   },
   {
     image: "/images/person-4.png",
+    details: [
+      {
+        name: "John Doe",
+        job: "  Design, Australia ",
+        socials: [
+          "/icons/facebook.svg",
+          "/icons/twitter.svg",
+          "/icons/linkedin.svg",
+          "/icons/instagram.svg",
+        ],
+        number: "+1 (378) 400-1234 ",
+        email: " julie@email.com",
+      },
+    ],
+  },
+  {
+    image: "/images/person-5.png",
+    details: [
+      {
+        name: "John Doe",
+        job: "  Design, Australia ",
+        socials: [
+          "/icons/facebook.svg",
+          "/icons/twitter.svg",
+          "/icons/linkedin.svg",
+          "/icons/instagram.svg",
+        ],
+        number: "+1 (378) 400-1234 ",
+        email: " julie@email.com",
+      },
+    ],
+  },
+  {
+    image: "/images/person-6.svg",
+    details: [
+      {
+        name: "John Doe",
+        job: "  Design, Australia ",
+        socials: [
+          "/icons/facebook.svg",
+          "/icons/twitter.svg",
+          "/icons/linkedin.svg",
+          "/icons/instagram.svg",
+        ],
+        number: "+1 (378) 400-1234 ",
+        email: " julie@email.com",
+      },
+    ],
+  },
+  {
+    image: "/images/person-7.png",
+    details: [
+      {
+        name: "John Doe",
+        job: "  Design, Australia ",
+        socials: [
+          "/icons/facebook.svg",
+          "/icons/twitter.svg",
+          "/icons/linkedin.svg",
+          "/icons/instagram.svg",
+        ],
+        number: "+1 (378) 400-1234 ",
+        email: " julie@email.com",
+      },
+    ],
+  },
+  {
+    image: "/images/person-8.png",
     details: [
       {
         name: "John Doe",

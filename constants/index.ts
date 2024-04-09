@@ -470,3 +470,17 @@ export const pricingPlans = [
 ];
 
 
+export const contactFormInfo = [
+  {
+    title  : "info@yourdomain.com",
+    icon : "/icons/email.svg"
+  },
+  {
+    title  : "+1 (378) 400-1234  ",
+    icon : "/icons/phone.svg"
+  },
+  {
+    title  : "www.domain.com",
+    icon : "/icons/address.svg"
+  }
+]

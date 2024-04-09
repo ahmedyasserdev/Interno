@@ -14,7 +14,9 @@ const page = () => {
     <WhatWeDo />
    <Result />
    <AboutUs />
-   <ContactForm/>
+   <ContactForm
+    title = "Creative project? Let's have a productive talk."
+   />
     </>
   )
 }

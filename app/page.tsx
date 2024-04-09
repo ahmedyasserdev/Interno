@@ -18,7 +18,7 @@ export default function Home() {
     <Brands />
     <Projects />
     <Info />
-    <ArticlesAndNews data = {articlesAndNews.slice(0,5)}   />
+    <ArticlesAndNews data = {articlesAndNews.slice(0,3)}   />
     <CTA />
     </>
   );

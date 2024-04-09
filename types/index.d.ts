@@ -40,17 +40,17 @@ type AnimatedArticleCardProps = {
 
 type PageHeaderProps = { subTitle: string; title: string; image: string };
 type Person = {
-  person : {
+  person: {
     image: string;
-  details: {
-    name: string;
-    job: string;
-    socials: string[];
-    number: string;
-    email: string;
-  }[];
+    details: {
+      name: string;
+      job: string;
+      socials: string[];
+      number: string;
+      email: string;
+    }[];
   };
-  index : number ;
+  index: number;
 };
 
 type PersonDetailsProps = {
@@ -96,3 +96,4 @@ type ProjectTypesProps = {
   handleUpdateSearchParams: (type) => void;
   searchParams: { type: string };
 };
+type ContactFormProps = { title: string; contactPage?: boolean };

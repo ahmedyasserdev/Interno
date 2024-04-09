@@ -1,51 +1,46 @@
-"use client";
+'use client'
+import { contactFormInfo, socials } from "@/constants";
+import { Container, Form, Button } from "react-bootstrap";
 import Image from "next/image";
-import { Container, Button, Form } from "react-bootstrap";
-const ContactForm = () => {
+import ContactInfoItem from "./ContactInfoItem";
+import ContactFormFields from "./ContactFormFields";
+
+const ContactForm = ({ title, contactPage = false }: ContactFormProps) => {
   return (
     <section className="section-padding">
       <Container>
         <div className="flex-center flex-column gap_2">
-          <h2 className="text-4 text-dark fw-bold text-center">
-            Creative project? Let's have <br />a productive talk.
+          <h2
+            className={`${
+              contactPage && "mb-5"
+            } text-4 text-dark fw-bold text-center text-wrap width-500`}
+          >
+            {title}
           </h2>
 
-          <Form className="d-flex flex-column gap-4 ">
-            <div className="d-flex align-items-center gap-3">
-              <Form.Group  controlId="name">
-                <Form.Control
-                  className="input-field focus-ring  focus-ring-light"
-                  type="text"
-                  placeholder="Name"
-                />
-              </Form.Group>
-              <Form.Group  controlId="email">
-                <Form.Control 
-                className="input-field focus-ring  focus-ring-light"
-                type="email" placeholder="Email" />
-              </Form.Group>
+        <div className = "flex-center  gap-5  flex-wrap " >
+        {contactPage && (
+            <div
+              className="bg-light d-flex flex-column gap-5   align-self-md-start "
+              style={{
+                padding: "76px 32px",
+                borderRadius: "50px",
+              }}
+            >
+              {contactFormInfo.map((info, index) => (
+                <ContactInfoItem key={index} info={info} />
+              ))}
+
+              <div className="slef-start d-flex align-items-center gap-5">
+                {socials.map((social, index) => (
+                  <SocialMediaItem key={index} social={social} />
+                ))}
+              </div>
             </div>
+          )}
 
-            <Form.Group className="my-4" style = {{outline : 'none'}} controlId="message">
-              <Form.Control 
-
-              className = "input-field focus-ring  focus-ring-light" 
-                placeholder = "message"
-              style = {{height  : "150px",}} as="textarea" />
-            </Form.Group>
-
-            <Button variant="dark button mx-auto d-flex gap-3 align-items-center " style = {{width : "max-content"}}  type="submit">
-              Send Now
-              <Image
-               src={"/icons/right-arrow.svg"}
-               width={19}
-               height={19}
-               className="object-fit-contain"
-               alt="right arrow"
-             />
-
-            </Button>
-          </Form>
+          <ContactFormFields contactPage={contactPage} />
+        </div>
         </div>
       </Container>
     </section>
@@ -53,3 +48,16 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
+
+const SocialMediaItem = ({ social } : {social : {icon : string ; alt : string ;  } }) => {
+  return (
+    <Image
+      src={social.icon}
+      alt={social.alt}
+      width={17}
+      height={17}
+    />
+  );
+};
+

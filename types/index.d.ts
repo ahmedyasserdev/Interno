@@ -97,3 +97,12 @@ type ProjectTypesProps = {
   searchParams: { type: string };
 };
 type ContactFormProps = { title: string; contactPage?: boolean };
+
+
+type CustomAccordionProps = 
+
+{
+  question: string;
+  answer: string;
+  eventKey: string;
+}

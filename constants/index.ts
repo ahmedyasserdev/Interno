@@ -115,28 +115,25 @@ export const projects = [
     title: "Modern Kitchen",
     image: "/images/project-1.png",
     desc: "Decor / Artchitecture",
-    type : "bedroom",
+    type: "bedroom",
   },
   {
     title: "Modern Kitchen",
     image: "/images/project-2.png",
     desc: "Decor / Artchitecture",
-    type : "bathroom",
-
+    type: "bathroom",
   },
   {
     title: "Modern Kitchen",
     image: "/images/project-3.png",
     desc: "Decor / Artchitecture",
-    type : "kitchen",
-
+    type: "kitchen",
   },
   {
     title: "Modern Kitchen",
     image: "/images/project-4.png",
     desc: "Decor / Artchitecture",
-    type : "livigns area ",
-
+    type: "livigns area ",
   },
 ];
 
@@ -469,18 +466,66 @@ export const pricingPlans = [
   },
 ];
 
-
 export const contactFormInfo = [
   {
-    title  : "info@yourdomain.com",
-    icon : "/icons/email.svg"
+    title: "info@yourdomain.com",
+    icon: "/icons/email.svg",
   },
   {
-    title  : "+1 (378) 400-1234  ",
-    icon : "/icons/phone.svg"
+    title: "+1 (378) 400-1234  ",
+    icon: "/icons/phone.svg",
   },
   {
-    title  : "www.domain.com",
-    icon : "/icons/address.svg"
-  }
-]
+    title: "www.domain.com",
+    icon: "/icons/address.svg",
+  },
+];
+
+const answer =
+  "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary popular belief. There are many variations of passages of Lorem Ipsum available, but the majority randomised.";
+
+export const faqs1 = [
+  {
+    title: "What is Interior?",
+    answer,
+  },
+  {
+    title: "Why do we use it?",
+    answer,
+  },
+  {
+    title: "Where does it come from?",
+    answer,
+  },
+  {
+    title: "What cities do you currently operate in?",
+    answer,
+  },
+  {
+    title: "Hipcouch Interior Design Service?",
+    answer,
+  },
+];
+
+export const faqs2 = [
+  {
+    title: "How long does the property buying process take?",
+    answer,
+  },
+  {
+    title: "What affects the timeline?",
+    answer,
+  },
+  {
+    title: "Can it be faster?",
+    answer,
+  },
+  {
+    title: "What cities do you currently operate in?",
+    answer,
+  },
+  {
+    title: "Hipcouch Interior Design Service?",
+    answer,
+  },
+];

@@ -306,14 +306,31 @@ img {
 }
 
 
-.blog_hero{
-  width : 100%  ;
+.blog_hero , .faq{
   @include mmd {
     width : 50%;
   }  
 }
 
 
-// TODO: Convert the home images from svg to png
+.accordion-flush > .accordion-item > .accordion-header .accordion-button,
+.accordion-flush > .accordion-item > .accordion-header .accordion-button.collapsed {
+  font-size: 2.5rem;
+  background: none;
+  border-color: $light;
+  outline : $light ;
+  text-transform: capitalize;
 
+  &[aria-expanded="true"] {
+  color: $primary;
+
+  }
+}
+.accordion-body{
+  max-width: 50rem;
+}
+
+
+
+// TODO: Convert the home images from svg to png
 

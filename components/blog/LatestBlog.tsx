@@ -16,7 +16,7 @@ const LatestBlog = () => {
             />
           </div>
 
-        <div className = "d-flex  flex-column align-self-start gap_4 text-start justify-content-start  mt-md-5   blog_hero" > 
+        <div className = "d-flex  px-4 px-md-0  flex-column align-self-start gap_4 text-start justify-content-start  mt-md-5   blog_hero" > 
             <h3 className="text-2 fw-bold text-dark">
             Low Cost Latest Invented Interior <br /> Designing Ideas
             </h3>

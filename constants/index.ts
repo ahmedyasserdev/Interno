@@ -35,7 +35,7 @@ export const NavLinks = [
         route: "/team",
       },
       {
-        label: "FQA",
+        label: "FAQ",
         route: "/FAQ",
       },
     ],

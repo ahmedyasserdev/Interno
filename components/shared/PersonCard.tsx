@@ -5,8 +5,12 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import PersonDetails from "./PersonDetails";
 
 const PersonCard = ({ person, index }: Person) => {
-  const { ref, controls, delay } = useScrollAnimation();
-
+  const { ref, controls, delay } = useScrollAnimation({index});
+  const variants = {
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: -50 }
+  };
+  
   return (
     <Col md={6} lg={3}>
       <motion.div
@@ -14,7 +18,8 @@ const PersonCard = ({ person, index }: Person) => {
         ref={ref}
         initial="hidden"
         animate={controls}
-        transition={{ duration: 0.5, delay }}
+        variants={variants}
+        transition={{ duration: 0.5, delay }} 
       >
         <div>
           <Image

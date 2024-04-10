@@ -13,7 +13,7 @@ const ContactForm = ({ title, contactPage = false }: ContactFormProps) => {
           <h2
             className={`${
               contactPage && "mb-5"
-            } text-4 text-dark fw-bold text-center text-wrap width-500`}
+            } text-4 text-dark fw-bold text-center text-wrap width-400`}
           >
             {title}
           </h2>
